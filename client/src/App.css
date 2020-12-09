@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400");
+
+.modal__overlay {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(33, 31, 31, 0.5);
+  cursor: default;
+}
+
+.modal__window {
+  display: flex;
+  flex-direction: column;
+  margin: 10% auto;
+  padding: 12px 16px 14px 16px;
+  width: 400px;
+  height: 240px;
+  border-radius: 8px;
+  background-color: #343232;
+}
+
+.deletemodal__window {
+  height: 130px;
+}
+
+.modal__header {
+  height: 140px;
+  padding-top: 20px;
+  border-bottom: solid 1px rgb(200, 200, 193);
+}
+.white {
+  color: whitesmoke;
+}
+.red {
+  color: #d23727;
+}
+.modal__title {
+  font-family: "Open Sans";
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 15px;
+}
+
+.modal__body {
+  flex: 1 1 400px;
+  padding-top: 5px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 10px;
+  margin-left: 1px;
+}
+
+.modal__footer {
+  height: 60px;
+  border-top: solid 1px rgb(200, 200, 193);
+}
+
+.modal__footer button {
+  padding: 10px 30px;
+  border-radius: 4px;
+  border: none;
+  font-family: "Open Sans";
+  font-size: 22px;
+  line-height: 30px;
+  color: whitesmoke;
+  margin-top: 25px;
+}
+.modal__footer button:disabled {
+  background: grey;
+}
+.button__yes {
+  background-color: darkgreen;
+  margin-left: 40px;
+  float: left;
+}
+.button__no {
+  background-color: #d23727;
+  float: right;
+  margin-right: 40px;
+}
+.button__no:hover {
+  background: #ef5b4c;
+  cursor: pointer;
+}
+.button__yes:hover {
+  background: #1d8f0f;
+  cursor: pointer;
+}
