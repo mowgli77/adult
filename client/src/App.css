@@ -15,20 +15,17 @@
 .modal__window {
   display: flex;
   flex-direction: column;
-  margin: 10% auto;
-  padding: 12px 16px 14px 16px;
-  width: 400px;
-  height: 240px;
+  margin: 13% auto;
+  padding: 12px 30px 14px 30px;
+  width: 385px;
+  height: min-content;
   border-radius: 8px;
   background-color: #343232;
 }
-
-.deletemodal__window {
-  height: 130px;
-}
-
 .modal__header {
-  height: 140px;
+  display: flex;
+  align-items: center;
+  height: min-content;
   padding-top: 20px;
   border-bottom: solid 1px rgb(200, 200, 193);
 }
@@ -36,39 +33,32 @@
   color: whitesmoke;
 }
 .red {
-  color: #d23727;
+  color: orangered;
 }
+
 .modal__title {
   font-family: "Open Sans";
   font-size: 24px;
   line-height: 36px;
   margin-bottom: 15px;
-}
-
-.modal__body {
-  flex: 1 1 400px;
-  padding-top: 5px;
-  font-family: "Open Sans";
-  font-size: 16px;
-  line-height: 24px;
-  margin-top: 10px;
-  margin-left: 1px;
+  text-align: justify;
+  margin-bottom: 40px;
 }
 
 .modal__footer {
-  height: 60px;
+  height: 70px;
   border-top: solid 1px rgb(200, 200, 193);
 }
 
 .modal__footer button {
-  padding: 10px 30px;
+  padding: 8px 30px;
   border-radius: 4px;
   border: none;
   font-family: "Open Sans";
-  font-size: 22px;
+  font-size: 20px;
   line-height: 30px;
   color: whitesmoke;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 .modal__footer button:disabled {
   background: grey;
@@ -90,4 +80,45 @@
 .button__yes:hover {
   background: #1d8f0f;
   cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .modal__window {
+    margin: 35% auto;
+    padding: 12px 20px 14px 20px;
+    width: 285px;
+  }
+  .modal__header {
+    display: flex;
+    align-items: center;
+    height: min-content;
+    padding-top: 20px;
+    border-bottom: solid 1px rgb(200, 200, 193);
+  }
+
+  .modal__title {
+    font-family: "Open Sans";
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    text-align: justify;
+    margin-bottom: 40px;
+  }
+
+  .modal__footer {
+    height: 60px;
+  }
+
+  .modal__footer button {
+    padding: 6px 25px;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .button__yes {
+    float: left;
+  }
+  .button__no {
+    margin-right: 25px;
+  }
 }

@@ -2,11 +2,11 @@ import React, {useState} from 'react'
 
 const AdultModal = () => {
 
-    const [text, setText] = useState('Даний ресурс призначений лише для повнолітніх користувачів. Вам уже виповнилось 18 років?')
+    const [text, setText] = useState('Вам уже исполнилось 18 лет?')
     const [red, setRed] = useState(false)
 
     const notAdult = () => {
-        setText('На жаль, Вам відмовлено у доступі. Будемо раді Вас бачити, коли Вам виповниться 18!')
+        setText('К сожалению, Вам отказано в доступе. Будем рады Вас видеть, когда Вам исполниться 18 лет!')
         setRed(true)
     }
 
@@ -19,8 +19,8 @@ const AdultModal = () => {
                     </div>
                 </div>
                 <div className={'modal__footer'}>
-                    <button className={`button__no`} onClick={notAdult} disabled={red}>Ні</button>
-                    <a href={'https://goodwine.com.ua/'}><button className={"button__yes"} disabled={red}>Так</button></a>
+                    <button className={`button__no`} onClick={notAdult} disabled={red}>Нет</button>
+                    <a href={'https://ad.admitad.com/g/7764x0k6264d3a075c5ecf883ae00d/?ulp={lpurl}&pt=1'}><button className={"button__yes"} disabled={red}>Да</button></a>
                 </div>
             </div>
         </div>
