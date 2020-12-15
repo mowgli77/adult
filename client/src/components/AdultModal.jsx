@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { AiFillCheckCircle, AiFillCloseCircle } from "react-icons/ai"
 
 const AdultModal = () => {
 
@@ -19,8 +20,12 @@ const AdultModal = () => {
                     </div>
                 </div>
                 <div className={'modal__footer'}>
-                    <button className={`button__no`} onClick={notAdult} disabled={red}>Нет</button>
-                    <a href={'https://ad.admitad.com/g/7764x0k6264d3a075c5ecf883ae00d/?ulp={lpurl}&pt=1'}><button className={"button__yes"} disabled={red}>Да</button></a>
+                    {/*<button className={`button__no`} onClick={notAdult} disabled={red}>Нет</button>*/}
+                    <button className={`button__no`} onClick={notAdult} disabled={red}><AiFillCloseCircle size={'45px'} /></button>
+                    {/*<a href={'https://ad.admitad.com/g/7764x0k6264d3a075c5ecf883ae00d/?ulp={lpurl}&pt=1'}>*/}
+                    {/*    <button className={"button__yes"} disabled={red}>Да/></button></a>*/}
+                    <a href={'https://ad.admitad.com/g/7764x0k6264d3a075c5ecf883ae00d/?ulp={lpurl}&pt=1'}>
+                        <button className={"button__yes"} disabled={red}><AiFillCheckCircle size={'45px'}/></button></a>
                 </div>
             </div>
         </div>
